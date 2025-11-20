@@ -7,9 +7,9 @@ st.title("Türkiye Haritası – İl ve Komşu İl Görüntüleyici")
 # Tanıtıcı açıklama
 st.markdown("""
 **Sinan Duman tarafından Sosyal Bilgiler dersi için hazırlanmıştır.**  
-mail: dumansinan18@gmail.com
 Bu uygulama, Türkiye’nin coğrafi ve idari yapısını görselleştirmenizi sağlar.  
 Haritalar üzerinde etkileşimli olarak bölgeleri inceleyebilir ve eğitim amaçlı bilgiler edinebilirsiniz.
+mail: dumansinan18@gmail.com
 """)
 # GeoJSON dosyasını oku
 geojson_path = "turkiye.geojson"
@@ -55,5 +55,6 @@ gdf[gdf[name_col].isin(komsular)].plot(ax=ax, color="orange", edgecolor="black")
 
 ax.set_axis_off()
 st.pyplot(fig)
+
 
 
