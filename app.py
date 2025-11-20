@@ -9,6 +9,9 @@ st.markdown("""
 **Sinan Duman tarafından Sosyal Bilgiler dersi için hazırlanmıştır.**  
 Bu uygulama, Türkiye’nin coğrafi ve idari yapısını görselleştirmenizi sağlar.  
 Haritalar üzerinde etkileşimli olarak bölgeleri inceleyebilir ve eğitim amaçlı bilgiler edinebilirsiniz.
+
+""")
+st.markdown("""
 mail: dumansinan18@gmail.com
 """)
 # GeoJSON dosyasını oku
@@ -55,6 +58,7 @@ gdf[gdf[name_col].isin(komsular)].plot(ax=ax, color="orange", edgecolor="black")
 
 ax.set_axis_off()
 st.pyplot(fig)
+
 
 
 
